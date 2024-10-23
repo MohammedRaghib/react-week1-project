@@ -22,9 +22,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {books.map((book, index) => (
-        <Main key={index} book={book} />
-      ))}
+      <div className='cards'>
+        {books.map((book, index) => (
+          <Main key={index} book={book} />
+        ))}
+      </div>
       <Footer />
     </div>
   );
