@@ -1,4 +1,5 @@
 import './App.css';
+import { Helmet } from "react-helmet";
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Main from './Components/Main';
@@ -51,6 +52,9 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <title>Book Display</title>
+      </Helmet>
       <Header />
       <div className='cards'>
         {books.map((book, index) => (
